@@ -1,7 +1,7 @@
 import os
 import sys
 sys.path.insert(1, os.path.abspath(".."))
-from src.utils.cam import cam_caputre
+from src.utils.cam import cam_capture
 
 import dbus
 from dbus.mainloop.glib import DBusGMainLoop
@@ -14,7 +14,7 @@ def get_root_dir():
 def handler(sender=None):
     path = get_root_dir() + '/data/photos/'
     if sender == 0:
-        cam_caputre(path)
+        cam_capture(path)
         print('agaaaa')
 
 

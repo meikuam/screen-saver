@@ -12,7 +12,7 @@ def get_curr_time():
             str(date.second)
     return today
 
-def cam_caputre(path):
+def cam_capture(path):
     cam = cv2.VideoCapture(0)
     s, img = cam.read()
 
